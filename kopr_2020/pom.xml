@@ -3,4 +3,34 @@
   <groupId>upjs.ics</groupId>
   <artifactId>kopr_2020</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
+
+
+	<properties>
+		<maven.compiler.target>11</maven.compiler.target>
+		<maven.compiler.source>11</maven.compiler.source>
+		<java.version>11</java.version>
+		<javafx.version>12</javafx.version>
+	</properties>
+	
+		<dependencies>
+		<dependency>
+			<groupId>org.openjfx</groupId>
+			<artifactId>javafx-controls</artifactId>
+			<version>${javafx.version}</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.openjfx</groupId>
+				<artifactId>javafx-maven-plugin</artifactId>
+				<version>0.0.3</version>
+				<configuration>
+					<mainClass>cviko09.uloha1.MainApp</mainClass>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+  
 </project>
